@@ -3,170 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta
-      property="og:title"
-      content="Register for A-Level Programs - IJMB & JUPEB"
-    />
-    <meta
-      property="og:description"
-      content="Join our prestigious A-Level program with IJMB & JUPEB options. Achieve your dreams with excellent tutoring and support!"
-    />
-    <meta
-      property="og:image"
-      content="https://g-favourite-educational-consult.vercel.app/image/G arrow finance logo.png"
-    />
-    <meta
-      property="og:url"
-      content="https://g-favourite-educational-consult.vercel.app/"
-    />
-    <meta
-      property="og:type"
-      content="https://g-favourite-educational-consult.vercel.app/"
-    />
-    <meta property="og:site_name" content="G-Favourite Educational Consult" />
-
-    <title>G-Favourite Registration</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>IJMB & JUPEB Registration - G Favourite Academy</title>
+    <link rel="stylesheet" href="home.css" />
   </head>
   <body>
+    <!-- Header Section with Navigation -->
     <header>
-      <div class="logo">
-        <img src="/image/G arrow letter finance logo.png" alt="School Logo" />
-      </div>
-      <div class="school-name">
-        <h1>G-Favourite Consult</h1>
-      </div>
-      <nav class="menu">
-        <button class="menu-toggle">☰</button>
-        <ul class="menu-items">
-          <li><a href="/home.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Programs</a></li>
-          <li><a href="#">Contact</a></li>
+      <nav class="navbar">
+        <div class="logo">
+          <h1>G Favourite Academy</h1>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#advertisement">IJMB & JUPEB</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="/registration.html">Register</a></li>
         </ul>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
-    <main>
-      <section class="registration-form">
-        <h2>A-Level Program Registration</h2>
-        <form id="registrationForm">
-          <!-- Student Personal Information -->
-          <fieldset>
-            <legend>Student Personal Information</legend>
-            <label
-              >Full Name: <input type="text" name="fullName" required
-            /></label>
-            <label
-              >Date of Birth: <input type="date" name="dob" required
-            /></label>
-            <label>Email: <input type="email" name="email" required /></label>
-            <label
-              >Phone Number: <input type="tel" name="phone" required
-            /></label>
-          </fieldset>
 
-          <!-- Guardian Information -->
-          <fieldset>
-            <legend>Guardian Information</legend>
-            <label
-              >Guardian Name: <input type="text" name="guardianName" required
-            /></label>
-            <label
-              >Guardian Phone: <input type="tel" name="guardianPhone" required
-            /></label>
-          </fieldset>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <h2>Welcome to G Favourite Academy</h2>
+        <p>
+          Your Success Starts Here: Join Our Accredited IJMB & JUPEB Programs
+        </p>
+        <a href="/registration.html" class="btn-primary">Get Started</a>
+      </div>
+    </section>
 
-          <!-- Education Information -->
-          <fieldset>
-            <legend>Education Information</legend>
-            <label
-              >Previous School: <input type="text" name="prevSchool" required
-            /></label>
-            <label
-              >Year of Graduation:
-              <input type="text" name="graduationYear" required
-            /></label>
-          </fieldset>
+    <!-- Advertisement Section -->
+    <section id="advertisement" class="advertisement-section">
+      <h2>Why Choose Our Programs?</h2>
+      <div class="ad-grid">
+        <div class="ad-card">
+          <img src="/image/ijmb.png" alt="IJMB Program" />
+          <h3>IJMB Program</h3>
+          <p>
+            Fast-track your university admission with our IJMB program. Gain
+            direct entry into 200-level courses.
+          </p>
+        </div>
+        <div class="ad-card">
+          <img src="/image/jupeb.png" alt="JUPEB Program" />
+          <h3>JUPEB Program</h3>
+          <p>
+            Achieve your dreams with our JUPEB program designed for success in
+            university admissions.
+          </p>
+        </div>
+      </div>
+      <a href="/registration.html" class="btn-secondary">Register Now!</a>
+    </section>
 
-          <!-- O-Level Information -->
-          <fieldset>
-            <legend>O-Level Information</legend>
-            <label
-              >Subject 1: <input type="text" name="subject1" required
-            /></label>
-            <label>Grade 1: <input type="text" name="grade1" required /></label>
-            <label
-              >Subject 2: <input type="text" name="subject1" required
-            /></label>
-            <label>Grade 2: <input type="text" name="grade1" required /></label>
-            <label
-              >Subject 3: <input type="text" name="subject1" required
-            /></label>
-            <label>Grade 3: <input type="text" name="grade1" required /></label>
-            <label
-              >Subject 4: <input type="text" name="subject1" required
-            /></label>
-            <label>Grade 4: <input type="text" name="grade1" required /></label>
-            <label
-              >Subject 5: <input type="text" name="subject1" required
-            /></label>
-            <label>Grade 5: <input type="text" name="grade1" required /></label>
-            <label
-              >Subject 6: <input type="text" name="subject1" required
-            /></label>
-            <label>Grade 6: <input type="text" name="grade1" required /></label>
-            <label
-              >Subject 7: <input type="text" name="subject1" required
-            /></label>
-            <label>Grade 7: <input type="text" name="grade1" required /></label>
-            <label
-              >Subject 8: <input type="text" name="subject1" required
-            /></label>
-            <label>Grade 8: <input type="text" name="grade1" required /></label>
-            <label
-              >Subject 9: <input type="text" name="subject1" required
-            /></label>
-            <label>Grade 9: <input type="text" name="grade1" required /></label>
-            <!-- Repeat similar fields for all required subjects -->
-          </fieldset>
-
-          <!-- A-Level Enrollment -->
-          <fieldset>
-            <legend>Type of A-Level Enrollment</legend>
-            <label
-              >Enrollment Type:
-              <select name="enrollmentType" required>
-                <option value="IJMB">IJMB</option>
-                <option value="JUPEB">JUPEB</option>
-              </select>
-            </label>
-            <label>Course: <input type="text" name="course" required /></label>
-          </fieldset>
-
-          <!-- Upload Picture -->
-          <label
-            >Upload Picture:
-            <input type="file" name="picture" accept="image/*" required
-          /></label>
-
-          <!-- Submit Button -->
-          <button type="button" id="registerButton">Register</button>
-        </form>
-      </section>
-    </main>
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2024 G-Favourite. All rights reserved.</p>
+      <p>&copy; 2024 G Favourite Academy. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
-    <a
-      href="https://wa.me/2347068185172"
-      target="_blank"
-      id="whatsappIcon"
-      title="Contact us on WhatsApp"
-    >
-      <img src="/image/Screenshot_20241205-005633.png" alt="WhatsApp Icon" />
-    </a>
+    <script src="home.js"></script>
   </body>
 </html>
